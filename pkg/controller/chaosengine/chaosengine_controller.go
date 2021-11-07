@@ -847,7 +847,7 @@ func isResultCRDAvailable() (bool, error) {
 		Resource: "customresourcedefinitions",
 	}
 
-	resultList, err := (*dynamicClient).Resource(gvr).List(v1.ListOptions{})
+	resultList, err := (*dynamicClient).Resource(gvr).List(context.TODO(), v1.ListOptions{})
 	if err != nil {
 		return false, err
 	}
