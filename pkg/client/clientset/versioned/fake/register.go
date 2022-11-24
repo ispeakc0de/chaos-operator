@@ -19,7 +19,7 @@ limitations under the License.
 package fake
 
 import (
-	litmuschaosv1alpha1 "github.com/litmuschaos/chaos-operator/api/litmuschaos/v1alpha1"
+	litmuschaosv1alpha1 "github.com/ispeakc0de/chaos-operator/api/litmuschaos/v1alpha1"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	schema "k8s.io/apimachinery/pkg/runtime/schema"

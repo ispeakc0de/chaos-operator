@@ -21,7 +21,7 @@ package versioned
 import (
 	"fmt"
 
-	litmuschaosv1alpha1 "github.com/litmuschaos/chaos-operator/pkg/client/clientset/versioned/typed/litmuschaos/v1alpha1"
+	litmuschaosv1alpha1 "github.com/ispeakc0de/chaos-operator/pkg/client/clientset/versioned/typed/litmuschaos/v1alpha1"
 	discovery "k8s.io/client-go/discovery"
 	rest "k8s.io/client-go/rest"
 	flowcontrol "k8s.io/client-go/util/flowcontrol"

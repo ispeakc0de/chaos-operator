@@ -19,7 +19,7 @@ package main
 import (
 	"flag"
 	"fmt"
-	"github.com/litmuschaos/chaos-operator/pkg/analytics"
+	"github.com/ispeakc0de/chaos-operator/pkg/analytics"
 	"github.com/operator-framework/operator-sdk/pkg/k8sutil"
 	"os"
 	"runtime"
@@ -36,8 +36,8 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/healthz"
 	"sigs.k8s.io/controller-runtime/pkg/log/zap"
 
-	litmuschaosiov1alpha1 "github.com/litmuschaos/chaos-operator/api/litmuschaos/v1alpha1"
-	"github.com/litmuschaos/chaos-operator/controllers"
+	litmuschaosiov1alpha1 "github.com/ispeakc0de/chaos-operator/api/litmuschaos/v1alpha1"
+	"github.com/ispeakc0de/chaos-operator/controllers"
 	//+kubebuilder:scaffold:imports
 )
 
@@ -72,10 +72,10 @@ func main() {
 	printVersion()
 
 	namespace, err := k8sutil.GetWatchNamespace()
-	if err != nil {
-		setupLog.Error(err, "failed to get watch namespace")
-		os.Exit(1)
-	}
+	//if err != nil {
+	//	setupLog.Error(err, "failed to get watch namespace")
+	//	os.Exit(1)
+	//}
 
 	// Trigger the Analytics if it's enabled
 	if isAnalytics := strings.ToUpper(os.Getenv("ANALYTICS")); isAnalytics != "FALSE" {

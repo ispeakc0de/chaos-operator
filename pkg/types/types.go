@@ -32,8 +32,8 @@ limitations under the License.
 package types
 
 import (
-	litmuschaosv1alpha1 "github.com/litmuschaos/chaos-operator/api/litmuschaos/v1alpha1"
-	"github.com/litmuschaos/chaos-operator/pkg/utils"
+	litmuschaosv1alpha1 "github.com/ispeakc0de/chaos-operator/api/litmuschaos/v1alpha1"
+	"github.com/ispeakc0de/chaos-operator/pkg/utils"
 	"sigs.k8s.io/controller-runtime/pkg/log"
 )
 

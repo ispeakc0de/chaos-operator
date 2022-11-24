@@ -25,13 +25,13 @@ import (
 
 	"sigs.k8s.io/controller-runtime/pkg/reconcile"
 
-	"github.com/litmuschaos/chaos-operator/api/litmuschaos/v1alpha1"
+	"github.com/ispeakc0de/chaos-operator/api/litmuschaos/v1alpha1"
 
 	"k8s.io/client-go/kubernetes/scheme"
 	"k8s.io/client-go/tools/record"
 	litmusFakeClientset "sigs.k8s.io/controller-runtime/pkg/client/fake"
 
-	chaosTypes "github.com/litmuschaos/chaos-operator/pkg/types"
+	chaosTypes "github.com/ispeakc0de/chaos-operator/pkg/types"
 )
 
 func TestGetChaosRunnerENV(t *testing.T) {

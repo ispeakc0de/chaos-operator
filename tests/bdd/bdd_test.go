@@ -27,7 +27,7 @@ import (
 	"time"
 
 	"github.com/google/martian/log"
-	"github.com/litmuschaos/chaos-operator/pkg/utils/retry"
+	"github.com/ispeakc0de/chaos-operator/pkg/utils/retry"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 	appv1 "k8s.io/api/apps/v1"
@@ -42,8 +42,8 @@ import (
 	"k8s.io/client-go/tools/clientcmd"
 	"k8s.io/klog"
 
-	"github.com/litmuschaos/chaos-operator/api/litmuschaos/v1alpha1"
-	chaosClient "github.com/litmuschaos/chaos-operator/pkg/client/clientset/versioned/typed/litmuschaos/v1alpha1"
+	"github.com/ispeakc0de/chaos-operator/api/litmuschaos/v1alpha1"
+	chaosClient "github.com/ispeakc0de/chaos-operator/pkg/client/clientset/versioned/typed/litmuschaos/v1alpha1"
 	restclient "k8s.io/client-go/rest"
 )
 
