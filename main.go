@@ -39,6 +39,7 @@ import (
 
 	litmuschaosiov1alpha1 "github.com/litmuschaos/chaos-operator/api/litmuschaos/v1alpha1"
 	"github.com/litmuschaos/chaos-operator/controllers"
+	"github.com/litmuschaos/chaos-operator/pkg/statushub"
 	//+kubebuilder:scaffold:imports
 )
 
@@ -128,6 +129,8 @@ func main() {
 		setupLog.Error(err, "unable to set up ready check")
 		os.Exit(1)
 	}
+
+	statushub.Start(statushub.ListenAddr(), statushub.ReportURL())
 
 	setupLog.Info("starting manager")
 	if err := mgr.Start(ctrl.SetupSignalHandler()); err != nil {
